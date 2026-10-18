@@ -6,10 +6,14 @@ This workflow is written to account for mainly two types of molecules. Triatomic
 The workflow of visualization is divided into 3 steps ,and an optional plotting of vibrational modes to see whether the visualization will be worth the computation or not. 
 
 # WORKFLOW Summary
-Step1: Convergence sweep of DFT (scf) across the selected mode ( not needed for the linear diatomic PES case) //
-Step2: Optional Vibrational Modes curve plotting ( usage of step's convergence  output csv to generate plot ) //
-Step3: Precompute orbittals for the next visualizer to take inputs and load files wothout running prohibitive real time DFT calculations //
-Step4: Load the precomputed orbitals csv and the PES to recompute electron denisty shift and nuclei shift in real time and render it on a GPU. //
+Step1: Convergence sweep of DFT (scf) across the selected mode ( not needed for the linear diatomic PES case)
+
+Step2: Optional Vibrational Modes curve plotting ( usage of step's convergence  output csv to generate plot )
+
+Step3: Precompute orbittals for the next visualizer to take inputs and load files wothout running prohibitive real time DFT calculations
+
+Step4: Load the precomputed orbitals csv and the PES to recompute electron denisty shift and nuclei shift in real time and render it on a GPU.
+
 
 
 <img width="1722" height="899" alt="IMG comp" src="https://github.com/Asif12102073/Real_Time-DFT-Molecule-visualization/blob/main/CO2.png" />
