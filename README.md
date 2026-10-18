@@ -35,7 +35,7 @@ Step3: Precompute orbittals for the next visualizer to take inputs and load file
 Step4: Load the precomputed orbitals csv and the PES to recompute electron denisty shift and nuclei shift in real time and render it on a GPU.
 
 
-EXAMPLE WORKFLOW 
+# EXAMPLE WORKFLOW  
 <img width="1722" height="899" alt="IMG comp" src="https://github.com/Asif12102073/Real_Time-DFT-Molecule-visualization/blob/main/CO2.png" />
 
 
