@@ -5,6 +5,26 @@ This workflow is written to account for mainly two types of molecules. Triatomic
 
 The workflow of visualization is divided into 3 steps ,and an optional plotting of vibrational modes to see whether the visualization will be worth the computation or not. 
 
+# Requirements 
+The requirements to run this workflow is simple, except for windows machines where pyscf isn't available. In that case a wsl2 conda environment for pyscf and a seperated windows taichi environment is necessary. 
+
+For linux 
+```bash
+pip install pyscf scipy numpy matplotlib taichi 
+```
+For windows 
+In wsl2
+```bash
+pip install pyscf scipy numpy matplotlib taichi 
+```
+Optionally a windows conda environment can be used alongside for more performance if needed
+(in windows conda bash , run the 4th visualizer only)
+```bash
+pip install scipy numpy matplotlib taichi 
+```
+
+
+
 # WORKFLOW Summary
 Step1: Convergence sweep of DFT (scf) across the selected mode ( not needed for the linear diatomic PES case)
 
@@ -36,10 +56,10 @@ Step2: ( Optional Vibrational mode plotting )
 python co2_vibrational_levels.py --input pes_co2_bend3.csv --mu-amu 12.887753 --nlevels 6 --plot-png levels_bend_wb97x.png
 ```
 
-Step3: ( Precompute orbitals for remdering later ) 
+Step3: ( Precompute orbitals for rendering later ) 
 
 ```bash
-# Precompute orbitals for remdering later
+# Precompute orbitals cache for loading and rendering later
  python co2_precompute_orbitals3.py --pes-csv pes_co2_bend3.csv
 ```
 
