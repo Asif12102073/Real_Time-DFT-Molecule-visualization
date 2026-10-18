@@ -17,3 +17,39 @@ Step4: Load the precomputed orbitals csv and the PES to recompute electron denis
 
 
 <img width="1722" height="899" alt="IMG comp" src="https://github.com/Asif12102073/Real_Time-DFT-Molecule-visualization/blob/main/CO2.png" />
+
+
+For an example basic workflow using CO2 was achieved by running these commands consecutively :: 
+
+Step 1: ( PES and scf sweep )
+
+```bash
+# Run DFT PES calculation after navigating to the CO2 directory of this repo
+python co2_dft_pes_1.py --mode bend --basis def2-svp --xc b3lyp  --qmin -0.8 --qmax 0.8 --points 33 --output pes_co2_bend.csv
+
+```
+
+Step2: ( Optional Vibrational mode plotting ) 
+
+```bash
+# Run plotting to see whether the modes are within range
+python co2_vibrational_levels.py --input pes_co2_bend3.csv --mu-amu 12.887753 --nlevels 6 --plot-png levels_bend_wb97x.png
+```
+
+Step3: ( Precompute orbitals for remdering later ) 
+
+```bash
+# Precompute orbitals for remdering later
+ python co2_precompute_orbitals3.py --pes-csv pes_co2_bend3.csv
+```
+
+Step4 : ( Final Taichi GGUI visualization )
+
+```bash
+# Final visualization using rev2 (recommended for qualitative understanding) 
+python co2_taichi_vibration_4_rev2.py --orbitals orbitals_co2_bend.npz --pes pes_co2_bend3.csv
+```
+
+
+
+ 
