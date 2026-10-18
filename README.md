@@ -19,7 +19,7 @@ Step4: Load the precomputed orbitals csv and the PES to recompute electron denis
 <img width="1722" height="899" alt="IMG comp" src="https://github.com/Asif12102073/Real_Time-DFT-Molecule-visualization/blob/main/CO2.png" />
 
 
-For an example basic workflow using CO2 was achieved by running these commands consecutively :: 
+For an example, this refernce picture ( a screenshot of the running animation) using CO2 was achieved by running these commands consecutively :: 
 
 Step 1: ( PES and scf sweep )
 
