@@ -11,4 +11,4 @@ Step2: Optional Vibrational Modes curve plotting ( usage of step's convergence  
 Step3: Precompute orbittals for the next visualizer to take inputs and load files wothout running prohibitive real time DFT calculations 
 Step4: Load the precomputed orbitals csv and the PES to recompute electron denisty shift and nuclei shift in real time and render it on a GPU. 
 
-<img width="1722" height="899" alt="IMG comp" src="[https://github.com/user-attachments/assets/f43f24af-4bfa-415c-a596-39d8c5113858](https://github.com/Asif12102073/Real_Time-DFT-Molecule-visualization/blob/main/CO2.png)" />
+<img width="1722" height="899" alt="IMG comp" src="https://github.com/Asif12102073/Real_Time-DFT-Molecule-visualization/blob/main/CO2.png" />
