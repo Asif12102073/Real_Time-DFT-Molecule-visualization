@@ -66,10 +66,10 @@ Step3: ( Precompute orbitals for rendering later )
 Step4 : ( Final Taichi GGUI visualization )
 
 ```bash
-# Final visualization using rev2 (recommended for qualitative understanding) 
+# Final visualization using rev2 (recommended for qualitative understanding rev1 for realistic view, mind that realistically co2 oscialltions are negilgiblw without the gain factors for more clarity) 
 python co2_taichi_vibration_4_rev2.py --orbitals orbitals_co2_bend.npz --pes pes_co2_bend3.csv
 ```
 
+After running these 4 commands from the CO2 directory, we get the animation 
 
-
- 
+<img width="1722" height="899" alt="IMG comp" src="https://github.com/Asif12102073/Real_Time-DFT-Molecule-visualization/blob/main/CO2_animation.gif" />
